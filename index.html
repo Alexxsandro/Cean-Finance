@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Crypto</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="containerLogo">
+            <img src="./img/icons8-cliente-mercante-80.png" alt="logo">
+            <span>Cean Crypto</span>
+        </div>
+        <div class="containerSearch">
+            <input type="text" placeholder="Do que você precisa?">
+        </div>
+        <div class="cn-perfil">
+            <ul>
+                <li class="metamask nomeUsuario">*********</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container_cota">
+        <ul class="lista">
+        </ul>
+    </div>
+    <main>
+       <div class="contaDigital">
+             <h2>Conta Digital</h2>
+             <div class="saldoConta">
+                <span>Saldo disponível</span>
+                <h1 class="iconeSaldo">R$ <span class="escondeSaldo">*****</span></h1>
+                <hr>
+                <a href="#">Ver meus rendimentos</a>
+             </div>
+             <div class="ferramnetasContaDigital">
+                <div class="pix">
+                    <span>pix</span>
+                </div>
+                <div class="containerPix">
+                    <h1>Área Pix</h1><img src="./img/icons8-x-48 (3).png" onclick="handleclosedPix()" alt="icone X">
+                    <p>Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso</p>
+                    <h3>Qual é o valor da tranferência</h3>
+                    <span class="saldoAtualizaPix">Saldo disponivel em conta <strong style="color:#333">R$ 0,00</strong></span>
+                    <input type="text" id="valorPix">
+                    <button onclick="confirmaPagamnetoPix()">Enviar</button>
+                </div>
+                <div class="pixEnviar">
+                    <h2>Para quem você quer tranferir R$ 0,02?</h2><img src="./img/icons8-x-48 (3).png" onclick="handleclosedFinalizaDeposito()">
+                    <p>Inicie uma nova tranferência</p>
+                    <input type="text" placeholder="E-mail, CPF/CNPJ" id="enderecoPix">
+                    <button onclick="finalizarPagamentoPix()">Enviar</button>
+                </div>
+                <div class="pagamento">
+                    <span>pagamentos</span>
+                </div>
+                <div class="deposita">
+                    <span>Depositar</span>
+                </div>
+                <div class="container_deposito">
+                    <h2>Qual valor você quer depositar?</h2><img src="./img/icons8-x-48 (3).png" onclick="handleclosedDeposito()">
+                    <p>Receber na hora em qualquer dia, sem custo</p>
+                    <input type="text" id="deposito">
+                    <button onclick="clickDeposito()">Depositar</button>
+                </div>
+                <div class="msgAlerta">
+                    <p>Deposito realizado com sucesso</p>
+                </div>
+                <div class="container_pagamento">
+                    <h2>Digite o código do boleto que quer pagar.</h2><img src="./img/icons8-x-48 (3).png" onclick="handleclosedPagamento()" alt="icone volta - X">
+                    <p>Os números deverão estar próximos ao código de barras</p>
+                    <input type="text">
+                    <button>Pagar</button>
+                </div>
+             </div>
+             <div class="movimentacao">
+               <h2>Registro</h2>
+               <table class="table">
+               </table>
+             </div>
+             <div class="chavePix">
+                <button onclick="handleMinhaChavePix()">Minhas chave pix</button>
+                <button onclick="handleCadastroChavePix()">Cadastrar chave pix</button>
+             </div>
+             <div class="containerRegistroChave">
+             </div>
+             <div class="containerCadastroChave">
+                <img src="./img/icons8-x-48 (3).png" id="btnClosedCadastro" alt="icone X">
+                <img class="cpf" src="./img/icons8-documento-regular-32.png" alt="icone documento"><p>CPF</p>
+                <img class="telefone" src="./img/icons8-iphone-32.png" alt="icone telefone"><p>Celular</p>
+                <img class="email" src="./img/icons8-mensagem-32.png" alt="icone mensagem"><p>E-mail</p>
+             </div>
+             <div class="listaChavePix">
+                <h2>Minhas chave Pix</h2><img src="./img/icons8-x-48 (3).png" onclick="handleClosedListaPix()" alt="icone X">
+                <table class="tableChave">
+                </table>
+             </div>
+       </div>
+       <div class="filtro"></div>
+    </main>
+    <footer>
+        <p>Copiright @ Ocean crypto</p>
+    </footer>
+    <script src="./js/bank.js"></script>
+</body>
+</html>

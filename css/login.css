@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Página login */
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    height: 100vh;
+    background-color: #fff;
+    width: 500px;
+}
+
+.container h3{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.container button{
+    width: 250px;
+    display: block;
+    padding: 9px;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+}
+
+#btnGitHub{
+    width: 250px;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    position: relative;
+}
+
+#btnGitHub::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/icons8-github-50.png');
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+    top: 5px
+}
+
+#btnGoogle{
+    width: 250px;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    position: relative;
+}
+
+#btnGoogle::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/icons8-google-logo-48.png');
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+    top: 5px
+}
+
+.container hr{
+    width: 250px;
+    height: 2px;
+    background-color: #ccc;
+    margin:  10px auto;
+}
+
+.label{
+    margin-left: 56px;
+    display: block;
+    margin-top: 130px;
+}
+
+.container input{
+    width: 250px;
+    padding: 10px;
+    margin:  0 auto;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.container input:focus{
+    outline: none;
+}
+
+.container span{
+    margin-left: 40px;
+}
+
+.container p{
+    display: inline-block;
+    margin-left: 60px;
+    color: #333;
+}
+
+.container a{
+    color: #3498DB;
+    text-decoration: none;
+}
+
+.login_logo{
+    margin-left: 65px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.login_logo span{
+    color: #333;
+    font-size: 22px;
+    position: absolute;
+    top: 30px;
+    left: 45px;
+}
+
+.login_logo img{
+    width: 70px;
+    height: 75px;
+}
+
+.container_imgBg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/sea-boat-sealing-in-ocean-view-from-above.jpg');
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+}
+
+.container_imgBg h1{
+    color: #fff;
+    width: 600px;
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin: 150px auto;
+    text-shadow: 1px 1px 3px  #ccc;
+}
+
+.container_imgBg img{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 50px;
+}
+
+.container_imgBg span{
+    color: #333;
+    display: block;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 65px;
+    top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.meta{
+    border: 2px solid #fff;
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+    right: 90px;
+    top: 50px;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+}
+
+.msgMeta{
+    background-color: #31a719;
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    right: 290px;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+}
+
+.msgMetaAtivo{
+   opacity: 10;
+   visibility: visible;
+}
+
+.msgMeta p{
+    color: #fff;
+    font-size: 17px;
+}
+
+.img_chat{
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    margin-left: 905px;
+    border-radius: 55px;
+    margin-top: -70px;
+    cursor: pointer;
+}
+
+.img_chat img{
+    display: block;
+    margin-top: 357px;
+    margin-left: 897px;
+    width: 58px;
+}
+
+.chat_login{
+    background-color: rgb(161, 161, 161);
+    width: 250px;
+    height: 280px;
+    right: 100px;
+    bottom: 50px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #333;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.chatOn{
+    opacity: 10;
+}
+
+.chat-container{
+    width: 240px;
+    height: 270px;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.chat-container span{
+    text-align: left;
+    margin-top: 10px;
+    display: block;
+}
+
+.paragraf{
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 150px;
+    padding: 6px !important;
+    background-color: rgb(36, 54, 75);
+    color: #fff;
+    margin-left: 5px;
+}
+
+#btnLoginChat{
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #333;
+    text-transform: uppercase;
+    border: 2px solid #333;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnLoginChat:hover{
+    background-color: #333 !important;
+    color: #fff;
+}
+
+.chat-container a{
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.chat-container input{
+    width: 170px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+    position: fixed;
+    display: block;
+    position: absolute;
+    top: 200px
+}
+
+.chat-container input:focus{
+    outline: none;
+}
+
+.chat-container img{
+    width: 30px;
+    cursor: pointer;
+    position: fixed;
+    left: 1200px;
+    top: 570px
+}
+
+.chat-container input::placeholder{
+    font-size: 16px;
+}
+
+.container_cadastro{
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+}
+
+.cadastroAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.container_cadastro label{
+    margin-left: 25px;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+.msgCadastro{
+    position: absolute;
+    top: 276px;
+    left: 310px;
+    display: block;
+    background-color: #31a719;
+    z-index: 100000;
+    padding: 10px;
+    width: 400px;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    visibility: hidden;
+    text-align: left;
+}
+
+.msgAtivo{
+    visibility: visible;
+    opacity: 10;
+}
+
+.msgCadastro p{
+    color: #fff;
+    font-size: 17px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    display: none;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+@media (max-width: 1050px){
+   
+    .container{
+        height: 100vh;
+        background-color: #fff;
+        min-width: 350px;
+    }
+
+    .container_imgBg h1{
+        color: #fff;
+        width: 500px;
+        text-transform: uppercase;
+        margin-left: 100px;
+        text-shadow: 1px 1px 3px  #ccc;
+       
+    }
+
+    .img_chat{
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        margin-left: 590px;
+        border-radius: 55px;
+        margin-top: -70px;
+        cursor: pointer;
+    }
+
+    .img_chat img{
+        display: block;
+        margin-top: 357px;
+        margin-left: 581px;
+    }
+
+    .chat-container img{
+        width: 30px;
+        cursor: pointer;
+        position: fixed;
+        left: 860px;
+        top: 595px
+    }
+    
+    .chat_login{
+        background-color: #333;
+        width: 250px;
+        height: 280px;
+        right: 100px;
+        bottom: 50px;
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px #333;
+        overflow: hidden;
+    }
+
+    .chat-container{
+        width: 240px;
+        height: 270px;
+        background-color: #fff;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width:700px){
+    main{
+        display: block;
+        overflow: hidden;
+    }
+
+    .container{
+        height: 100vh;
+        margin-top: -50px;
+        background-color: #fff;
+        width: 100%;
+        border-top: 1px solid #fff;
+        overflow: hidden;
+    }
+    
+    .container h3{
+        text-align: center;
+        margin-top: 50px;
+        text-transform: uppercase;
+        color: #333;
+    }
+    
+    .container button{
+        width: 300px;
+        display: block;
+        padding: 9px;
+        margin: 10px auto;
+        cursor: pointer;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        border: none;
+    }
+    
+    #btnGoogle{
+        width: 300px;
+        display: block;
+        padding: 10px;
+        margin: 10px auto;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #333;
+        position: relative;
+    }
+    
+    #btnGoogle::before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/icons8-google-logo-48.png');
+        background-size: cover;
+        position: absolute;
+        left: 70px;
+        top: 5px
+    }
+    
+    .container hr{
+        width: 300px;
+    }
+    
+    .label{
+        margin-left: 56px;
+        display: block;
+        margin-top: 130px;
+        color: #333;
+    }
+    
+    .container input{
+        width: 300px;
+        padding: 10px;
+        margin:  0 auto;
+        display: block;
+        border: 1px solid #ccc;
+    }
+   
+    .container p{
+        display: inline-block;
+        margin-left: 60px;
+        color: #333;
+    }
+    
+    .container a{
+        color: #3498DB;
+        text-decoration: none;
+    }
+    
+    .login_logo{
+        
+        margin-left: 95px;
+        margin-top: 80px;
+        position: relative;
+    }
+    
+    .login_logo span{
+        color: #333;
+        font-size: 22px;
+        position: absolute;
+        top: 30px;
+        left: 45px;
+    }
+    
+    .login_logo img{
+        width: 70px;
+        height: 75px;
+    }
+    
+    .container_imgBg{
+        width: 100%;
+        height: 10px;
+        background-color: #fff !important;        
+        background-position: right center;
+        position: relative;
+        background-image: none;
+    }
+    
+    .container_imgBg h1{
+        color: #fff;
+        width: 600px;
+        text-transform: uppercase;
+        margin-left: 200px;
+        margin: 150px auto;
+        text-shadow: 1px 1px 3px  #ccc;
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    
+    .container_imgBg img{
+        position: absolute;
+        left: 15px;
+        top: -10px;
+        width: 50px;
+    }
+    
+    .container_imgBg span{
+        color: #333;
+        display: block;
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        left: 65px;
+        top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .msgMetaAtivo{
+       opacity: 10;
+       visibility: visible;
+    }
+    
+    .msgMeta p{
+        color: #fff;
+        font-size: 17px;
+    }
+    
+    .img_chat{
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        margin-left: 315px;
+        border-radius: 55px;
+        margin-top: -744px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .img_chat img{
+        display: block;
+        margin-top: 300px;
+        position: fixed;
+        margin-left: 307px;
+        width: 38px;
+        z-index: 1000;
+    }
+    
+    .chat_login{
+        background-color: rgb(161, 161, 161);
+        width: 250px;
+        height: 280px;
+        right: 100px;
+        bottom: 50px;
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px #333;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease-in;
+        top: -480px;
+        left: 60px;
+        z-index: 1000;
+    }
+    
+    .chatOn{
+        opacity: 10;
+        visibility: visible;
+    }
+    
+    .chat-container{
+        width: 240px;
+        height: 270px;
+        background-color: #fff;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+        overflow-y: scroll;
+        z-index: 1000;
+    }
+    
+    .chat-container span{
+        text-align: left;
+        margin-top: 10px;
+        display: block;
+    }
+    
+    .paragraf{
+        margin-top: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        width: 150px;
+        padding: 6px !important;
+        background-color: rgb(36, 54, 75);
+        color: #fff;
+        margin-left: 5px;
+    }
+    #btnLoginChat{
+        width: 150px;
+        padding: 10px;
+        border-radius: 15px;
+        color: #333;
+        text-transform: uppercase;
+        border: 2px solid #333;
+        margin-left: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #btnLoginChat:hover{
+        background-color: #333 !important;
+        color: #fff;
+    }
+    
+    .chat-container a{
+        display: block;
+        margin-left: 10px;
+        margin-top: 5px;
+        color: #333;
+    }
+    
+    .chat-container input{
+        width: 170px;
+        padding: 10px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        margin-top: 25px;
+        position: fixed;
+        display: block;
+        position: absolute;
+        top: 200px
+    }
+    
+    .chat-container input:focus{
+        outline: none;
+    }
+    
+    .chat-container img{
+        width: 30px;
+        cursor: pointer;
+        position: fixed;
+        left: 255px;
+        top: 515px
+    }
+    
+    .chat-container input::placeholder{
+        font-size: 16px;
+    }
+    
+    .container_cadastro{
+        background-color: #fff;
+        position: absolute;
+        top: 300px;
+        left: 0px;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .cadastroAtivo{
+        opacity: 10;
+        visibility: visible;
+    }
+    
+    .container_cadastro label{
+        margin-left: 35px;
+        margin-top: 15px;
+        display: block;
+        color: #333;
+    }
+    
+    .msgCadastro{
+        position: absolute;
+        left: 40px;
+        top:400px;
+        width: 300px;
+        opacity: 0;
+        transition: 0.5s ease-in;
+        visibility: hidden;
+        text-align: center;
+       
+    }
+    .msgCadastro p {
+        margin-left: -10px;
+    }
+    
+    .msgAtivo{
+        visibility: visible;
+        opacity: 10;
+    }
+    
+    .msgCadastro p{
+        color: #fff;
+        font-size: 17px;
+    }
+
+    footer{
+        margin-top: 120px;
+        display: block;
+    }
+    
+}

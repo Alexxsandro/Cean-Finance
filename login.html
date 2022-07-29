@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/login.css" rel="stylesheet">
+    <title>Login - Cean crypto</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+             <div class="login_logo">
+                <img src="./img/icons8-cliente-mercante-80.png" alt="logo"><span>Cean Crypto</span>
+             </div>
+             <h3>Faça login na sua conta</h3>
+             <button id="btnGoogle">Google</button>
+             <hr>
+             <div class="containerLogin">
+                <label class="label" id="textLogin">E-mail:</label>
+                <input type="text" id="userDados">
+                <button onclick="btnEntrar()">Entrar</button>
+             </div>
+             <p>Não tem uma conta?</p> <a href="#" onclick="modalIncrever()">Inscrever-se</a>
+             <div class="container_cadastro">
+                <label>Nome:</label>
+                <input type="text">
+                <label>E-mail:</label>
+                <input type="text">
+                <label>CPF:</label>
+                <input type="text">
+                <label>Senha:</label>
+                <input type="password">
+                <label>Confirma senha:</label>
+                <input type="password">
+                <button onclick="btnCadastro()">Cadastrar</button>
+             </div>
+             <div class="msgCadastro">
+                <p>Cadastro efetuado com sucesso</p>
+            </div>
+        </div>
+        <div class="container_imgBg">
+            <h1>Cean Crypto , velocidade e segurança o banco feito pra você</h1>
+            <div class="img_chat">
+                <img src="./img/icons8-chat-58.png" alt="icone chat">
+            </div>
+            <div class="chat_login">
+                <div class="chat-container msgChat">
+                    <div class="chatRemove">
+                    <p class="paragraf">Olá, boa noite!!</p>
+                    <p class="paragraf">Escolha a ajuda clicando:</p>
+                    <a href="#"id="btnperca">Cartão crédito</p>
+                    <a href="#" id="btnAtendente">Falar com atendente</a>
+                </div>
+                    <input type="text" placeholder="Mensagem..." id="chatvalue"><img src="./img/icons8-enviar-e-mail-30.png" id="btnChatEnviar" alt="icone enviar email">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright @ Ocean Bank</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

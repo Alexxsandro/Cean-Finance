@@ -1,0 +1,1081 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    background-position: top center;
+    box-shadow: 1px 1px 10px 1px #333;
+}
+
+.containerLogo{
+    margin-left: 80px;
+    margin-top: 12px;
+    width: 200px;
+}
+
+.containerLogo img{
+    width: 50px;
+}
+
+.containerLogo span{
+    position: absolute;
+    top: 30px;
+    left: 140px;
+    display: block;
+    color: #333;
+}
+
+/*  ---------- */
+.containerSearch{
+    transform: translateX(-150px);
+    margin-top: 20px;
+}
+
+.containerSearch input{
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.containerSearch::before{
+    content: '';
+    background-image: url('../img/icons8-pesquisar-26.png');
+    background-size: cover;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.containerSearch input::placeholder{
+    font-size: 17px;
+    color: #ccc;
+}
+
+.cn-perfil{
+    margin-right: 80px
+}
+
+.cn-perfil ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.cn-perfil ul li{
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.metamask{
+    background-color: #026e99;
+    padding: 10px;
+    width: 300px;
+    color: #fff;
+    left: -300px;
+    top: -10px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.metamask li{
+    color: #fff
+}
+
+.container_cota{
+    width: 100vw;
+    height: 50px;
+    background-image: url('../img/hot-air-balloon-gd51d49f42_1280.jpg');
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+}
+
+.lista li{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 250px;
+    padding-top: 15px;
+    margin-right: 100px;
+    padding-right: 50px;
+}
+
+.lista li img{
+    width: 35px;
+    padding-top: -50px;
+    display: block;
+    top:90px;
+    position: absolute;
+}
+
+.cotaSpan{
+    margin-left: 200px;
+    display: inline-block;
+}
+
+main{
+   width: 900px;
+   margin:  50px auto;
+}
+
+.contaDigital{
+    width: 900px;
+    border-radius: 17px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px #fff;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    background-image: url('../img/hot-air-balloon-gd51d49f42_1280.jpg');
+}
+
+.contaDigital h2{
+    color: #fff;
+    width: 120px;
+    font-size: 18px;
+    border-bottom: 3px solid #fff;    
+    text-align: left;
+    padding-top: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.saldoConta{
+    background-color: #fff;
+    width: 300px;
+    height: 120px;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px #333;
+    border-bottom: 39px solid #026e99;
+}
+
+.saldoConta span{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: rgb(148, 148, 148);
+    display: block;
+}
+
+.saldoConta h1{
+    margin-left: 10px;
+    padding: 8px;
+    color: #333;
+    cursor: pointer;
+}
+
+.saldoConta h1::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    left: 520px;
+    background-image: url('../img/icons8-olho-fechado-32.png');
+    background-size: cover;
+}
+
+.saldoConta hr{
+    color: rgb(241, 241, 241);
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.saldoConta a{
+    margin-left: 20px;
+    padding: 8px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ferramnetasContaDigital{
+   margin-left: 45px;
+   display: flex;
+}
+
+.escondeSaldo{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: -45px;
+    font-size: 30px;
+    color: rgb(43, 43, 43) !important;
+}
+
+.pix{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 17px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px 0px #333;
+    position: relative;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.pix:hover{
+    transform: scale(1.1);
+}
+
+.pix::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background-image: url('https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix.svg');
+}
+
+.pix span{
+    color: #333;
+    padding-top: 70px;
+    display: block;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.deposita{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 17px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 10px 0px #333;
+    position: relative;
+    transition: 0.2s linear;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.deposita::before{
+    content: '';
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background-image: url('../img/icons8-dinheiro-30.png');
+    background-size: cover;
+}
+
+.deposita span{
+    color: #333;
+    padding-top: 70px;
+    display: block;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.deposita:hover{
+    transform: scale(1.1);
+}
+
+.pagamento{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px 0px #333;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.pagamento:hover{
+    transform: scale(1.1);
+}
+
+.pagamento::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/icons8-boleto-bankario-48\ \(2\).png');
+    background-position: top center;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.pagamento span{
+    color: #333;
+    padding-top: 70px;
+    display: block;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.movimentacao{
+    margin-left: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #333;
+    height: 400px;
+    width: 400px;
+    border-radius: 17px;
+    margin-top: 20px;
+    position: absolute;
+    left: 650px;
+    top: 195px;
+    border-right: 5px solid #026e99;
+    cursor: pointer;
+    overflow-x: auto;
+}
+
+.movimentacao img{
+    margin-top: 50px;
+    margin-left: 160px;
+    width: 75px;
+}
+
+.movimentacao span{
+    margin-top: 10px;
+    display: block;
+    padding-top: 10px;
+    margin-left: 30px;
+    color: #ccc;
+}
+
+.movimentacao h3{
+    width: 250px;
+    text-align: center;
+    padding-top: 145px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.movimentacao table{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.movimentacao td{
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+    color: #333;
+}
+
+.movimentacao h2{
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.testePix{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 53, 53);
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-top: 7px;
+    position: absolute;
+}
+
+.DepositoPix{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(31, 202, 83);
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-top: 7px;
+    position: absolute;
+}
+
+.chavePix{
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.chavePix button{
+    display: block;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: none;
+    border-bottom: 5px solid #026e99;
+    background-color: #fff;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.containerPix{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    top: 220px;
+    left: 500px;
+    height: 300px;
+    border-radius: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.containerPixAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.containerPix h1{
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+}
+
+.containerPix img{
+    position: absolute;
+    width: 30px;
+    left: 300px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.containerPix p{
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #a8a1a1;
+}
+
+.containerPix span{
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #a8a1a1;
+}
+
+.containerPix h3{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.containerPix input{
+    border: 1px solid #ccc;
+    width: 290px;
+    display: block;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.containerPix input:focus{
+    outline: none;
+}
+
+.containerPix button{
+    width: 290px;
+    margin-left: 30px;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+    border: none;
+    background-color: #026e99;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 7px;
+}
+
+.pixEnviar{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    top: 220px;
+    left: 500px;
+    height: 300px;
+    border-radius: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.pixEnviar img{
+    position: absolute;
+    width: 30px;
+    left: 310px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.pixEnviarAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.pixEnviar h2{
+    color: #333;
+    width: 280px;
+}
+
+.pixEnviar p{
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.pixEnviar input{
+    display: block;
+    width: 250px;
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.pixEnviar button{
+    width: 250px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: #026e99;
+    border: 1px solid #026e99;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container_pagamento{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    top: 220px;
+    left: 500px;
+    height: 300px;
+    border-radius: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.container_pagamento img{
+    position: absolute;
+    width: 30px;
+    left: 310px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.containerPagamentoAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.container_pagamento h2{
+    color: #333;
+    width: 280px;
+}
+
+.container_pagamento p{
+    margin-left: 50px;
+    width: 280px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.container_pagamento input{
+    display: block;
+    width: 250px;
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.container_pagamento button{
+    width: 250px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #026e99;
+    color: #fff;
+    border: 1px solid #026e99;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container_deposito{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    top: 220px;
+    left: 500px;
+    height: 250px;
+    border-radius: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.containerDepositoAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.container_deposito img{
+    position: absolute;
+    width: 30px;
+    left: 310px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.container_deposito h2{
+    color: #333;
+    width: 280px;
+    margin-left: 30px;
+}
+
+.container_deposito p{
+    margin-left: 30px;
+    width: 280px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.msgAlerta{
+    background-color: #00a500;
+    z-index: 10;
+    height: 40px;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    left: 820px;
+    top: 328px;
+    transition: 0.3 linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.msgAlertaAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.msgAlerta p{
+    color: #fff;
+}
+
+.container_deposito input{
+    display: block;
+    width: 280px;
+    margin-left: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.container_deposito button{
+    width: 280px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #026e99;
+    color: #fff;
+    border: 1px solid #026e99;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.containerCadastroChave{
+    background-color: #fff;
+    position: absolute;
+    width: 900px;
+    height: 150px;
+    top: 560px;
+    box-shadow: 0px 0px 10px 0px #333;
+    border-radius: 0px 0px 17px 17px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+}
+
+.cadastroPixAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.containerCadastroChave p{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.containerCadastroChave p:hover{
+    color: #026e99;
+}
+
+#btnClosedCadastro{
+    width: 30px;
+    position: absolute;
+    display: block;
+    left: 800px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.cpf{
+    position: absolute;
+    left: 20px;
+    top: 15px
+}
+
+.telefone{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+
+.email{
+    position: absolute;
+    left: 20px;
+    top: 103px;
+}
+
+.containerRegistroChave{
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    height: 250px;
+    width: 300px;
+    left: 500px;
+    z-index: 1000;
+    border-radius: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.containerRegistroChaveAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.containerRegistroChave h2{
+    color: rgb(27, 27, 27);
+    width: 200px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.containerRegistroChave p{
+    color: rgb(114, 114, 114);
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.containerRegistroChave input{
+    padding: 10px;
+    display: block;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin:  10px auto;
+    margin-top: 30px;
+}
+
+.containerRegistroChave button{
+    padding: 10px;
+    border-radius: 7px;
+    width: 260px;
+    display: block;
+    margin:  0 auto;
+    background-color: #026e99;
+    border: 1px solid #026e99;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.containerRegistroChave img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.listaChavePix{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    z-index: 1000;
+    border-radius: 17px;
+    box-shadow: 0px 0px 3px 0px #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.listaChavePix img{
+    width: 35px;
+    cursor: pointer;
+}
+
+.listaChavePixAtivo{
+    opacity: 10;
+    visibility: visible;
+}
+
+.listaChavePix h2{
+    color: #333;
+    width: 400px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.listaChavePix table{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.listaChavePix table td{
+    padding-right: 40px;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.listaChavePix table td img{
+    width: 32px;
+}
+
+.filtro{
+    width: 100vw;
+    height: 121vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+   display: none;
+}
+
+footer{
+    background-image: url('../img/hot-air-balloon-gd51d49f42_1280.jpg');
+    height: 60px;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: top;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    padding-top: 25px;
+}
+
+@media(max-width:1050px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background-color: #fff;
+        background-position: top center;
+        box-shadow: 1px 1px 10px 1px #333;
+    }
+
+    /*  ---------- */
+    .containerSearch{
+        transform: translateX(-150px);
+        margin-top: 20px;
+    }
+
+    .containerSearch input{
+        width: 250px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+    }
+
+    .containerSearch::before{
+        content: '';
+        background-image: url('../img/icons8-pesquisar-26.png');
+        background-size: cover;
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        left: 210px;
+        z-index: 10000;
+        cursor: pointer;
+    }
+
+    .metamask{
+        left: -280px;
+    }
+
+    .container_cota{
+        width: 100%;
+        height: 50px;
+        background-image: url('../img/hot-air-balloon-gd51d49f42_1280.jpg');
+    }
+    
+    .lista{
+        display: flex;
+        list-style: none;
+    }
+
+    .lista li{
+        color: #fff;
+        font-weight: bold;
+        margin-left: 150px;
+    }
+
+    .lista li img{
+        width: 35px;
+        padding-top: -50px;
+        display: block;
+        top:90px;
+        position: absolute;
+    }
+    
+    .cotaSpan{
+        margin-left: 150px;
+        display: inline-block;
+    }
+    
+    .saldoConta{
+        background-color: #fff;
+        width: 320px;
+    }
+
+    .saldoConta h1::before{
+        left: 380px;
+    }
+
+    .movimentacao{
+        left: 470px;
+        top: 240px;
+    }
+ 
+    .testePix{
+        width: 10px;
+        height: 10px;
+        background-color: rgb(255, 53, 53);
+        border-radius: 25px;
+        padding-left: 10px;
+        margin-top: 7px;
+        position: absolute;
+    }
+
+    .DepositoPix{
+        width: 10px;
+        height: 10px;
+        background-color: rgb(31, 202, 83);
+        border-radius: 25px;
+        padding-left: 10px;
+        margin-top: 7px;
+        position: absolute;
+    }
+    
+    .chavePix{
+        margin-left: 45px;
+        margin-top: 30px;
+    }
+
+    .chavePix button{
+        display: block;
+        padding: 10px;
+        width: 200px;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        border: none;
+        border-bottom: 5px solid #026e99;
+        background-color: #fff;
+        color: #333;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .containerPix{
+        left: 350px;
+    }
+    
+    .pixEnviar{
+        left: 350px;
+    }
+
+    .pixEnviar p{
+        color: #a8a1a1;
+    }
+
+    .container_pagamento{
+        left: 350px;
+    }
+
+    .container_deposito{
+        left: 350px;
+    }
+
+    .container_deposito p{
+        color: #a8a1a1;
+    }
+
+    .msgAlerta{
+        background-color: #00a500;
+        z-index: 10;
+        height: 40px;
+        padding: 10px;
+        display: block;
+        position: absolute;
+        left: 620px;
+        top: 328px;
+        transition: 0.3 linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .containerRegistroChave{
+        left: 350px;
+    }
+    
+    .listaChavePix{
+        top: 250px;
+        left: 300px;
+    }
+}
