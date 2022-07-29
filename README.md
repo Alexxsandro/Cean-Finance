@@ -1,4 +1,5 @@
 # Ocean-crypto
+Projeto versão Desktop
 
 * - Projeto feito utilizando o JS, Node js e para armazenamento mongodb, sistema de login com validações no login e cadastro
 
