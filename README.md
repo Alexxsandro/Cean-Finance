@@ -1,7 +1,16 @@
 # Ocean-crypto
-Projeto versão Desktop
+Projeto Ocean Crypto - simular uma conta com algumas ferramentas, depósito, tranferência Pix, saldo atualizado, registro chave Pix utilizando uma das três formas CPF, celular, email e opção de excluir chave Pix 
 
-:desktop_computer: -  Projeto feito utilizando o JS, Node js e para armazenamento mongodb, sistema de login com validações no login e cadastro
+
+:desktop_computer: -  Projeto feito utilizando HTML, CSS, JS, Node js e para armazenamento mongodb
+
+
+
+
+
+
+
+
 
 
 ![Captura de tela de 2022-07-28 22-23-42](https://user-images.githubusercontent.com/80698066/181664114-eb8e78ff-171b-4547-b896-9d6db63f6505.png)
