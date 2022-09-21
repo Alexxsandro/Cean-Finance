@@ -1,5 +1,5 @@
-# Ocean-crypto
-Projeto Ocean Crypto - simular uma conta com algumas ferramentas, depósito, tranferência Pix, saldo atualizado, registro chave Pix utilizando uma das três formas CPF, celular, email e opção de excluir chave Pix.
+# Cean Finance
+Projeto Cean Finance - simular uma conta com algumas ferramentas, depósito, tranferência Pix, saldo atualizado, registro chave Pix utilizando uma das três formas CPF, celular, email e opção de excluir chave Pix.
 
 
 :desktop_computer: -  Projeto feito utilizando HTML, CSS, JS, Node js e para armazenamento mongodb
@@ -11,24 +11,25 @@ Projeto Ocean Crypto - simular uma conta com algumas ferramentas, depósito, tra
 
 
 
-
-
-![Captura de tela de 2022-07-28 22-23-42](https://user-images.githubusercontent.com/80698066/181664114-eb8e78ff-171b-4547-b896-9d6db63f6505.png)
-
 :desktop_computer: - Foi criado um chat simples para interagir com o usuário
 
+![Captura de tela 2022-09-20 211414](https://user-images.githubusercontent.com/80698066/191388775-7ec550f3-562a-4ebc-87ba-501fe22e2c19.png)
+![Captura de tela 2022-09-20 211443](https://user-images.githubusercontent.com/80698066/191388813-801dadee-36b1-4865-a4d0-6efcf062681a.png)
 
-![Captura de tela de 2022-07-28 22-23-51](https://user-images.githubusercontent.com/80698066/181664130-ff074ee0-923e-4dd1-90f4-1a8c3f8e9025.png)
-![Captura de tela de 2022-07-28 22-23-59](https://user-images.githubusercontent.com/80698066/181664159-b913c352-cc74-4399-98e6-16d2626cbc7b.png)
+
+
+
+
 
 :desktop_computer: -  Está sendo utilizado uma API para trazer informações de cotação BTC,EUR e USD
 
+![Captura de tela 2022-09-20 211633](https://user-images.githubusercontent.com/80698066/191388891-ac0ca986-b0f3-4de3-8654-889563fd549f.png)
 
-![Captura de tela de 2022-07-28 22-24-19](https://user-images.githubusercontent.com/80698066/181664173-33f600ed-b1b1-4cd9-ab1d-6f3e3f39ca66.png)
 
 :desktop_computer: - Foi desenvolvido um sistema simples para simular uma conta , com algumas ferramentas , depósito, tranferência Pix, registro de tranferência e depósito , saldo da conta atualizado e registro de chave Pix utilizando uma das três formas , CPF, celular, email, o usuário ainda tem a opção de remover chave Pix 
 
-![Captura de tela de 2022-07-28 22-24-34](https://user-images.githubusercontent.com/80698066/181664186-f244a579-5104-4cd2-b98f-05f92fecb681.png)
+![Captura de tela 2022-09-20 211652](https://user-images.githubusercontent.com/80698066/191388915-01a679a6-b84d-4693-85cb-d70fcde0533d.png)
+
 
 :desktop_computer: - Foi desenvolvido um sistema para realizar Pix , no primeiro modal é informado o valor da transferência e o segundo é informado o endereço para a tranferência , todas as transferências são registradas e informadas ao usuário no registro 
 
