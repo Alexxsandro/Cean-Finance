@@ -7,7 +7,8 @@ pagamento,
 deposita,
 msgAlerta,
 saldoUsuario,
-pixEnviar;
+pixEnviar,
+saldoAtualizadoPixFinal;
 
 pixEnviar = document.querySelector('.pixEnviar');
 msgAlerta = document.querySelector('.msgAlerta');
@@ -17,6 +18,7 @@ iconeSaldo = document.querySelector('.iconeSaldo');
 pix = document.querySelector('.pix');
 containerPix = document.querySelector('.containerPix');
 filtro = document.querySelector('.filtro');
+saldoAtualizadoPixFinal = document.querySelector(".saldoAtuali");
 
 (function() {
     fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
@@ -116,6 +118,7 @@ const confirmaPagamnetoPix = () => {
 
     let valorPix = document.getElementById('valorPix');
     let converte = Number(saldoUsuario)
+    saldoAtualizadoPixFinal.innerHTML = `R$ ${saldoUsuario}`
     valorPix = Number(valorPix.value);
 
     if(valorPix !== '' && valorPix > 0){
@@ -134,6 +137,7 @@ const confirmaPagamnetoPix = () => {
 const finalizarPagamentoPix = () => {
  
     let enderecoPix = document.getElementById('enderecoPix').value;
+    
     if(enderecoPix !== ''){
 
         let getLocalStorage = localStorage.getItem('dadosUsuario');
@@ -155,6 +159,7 @@ const finalizarPagamentoPix = () => {
           
              if(resp.status === 204 || resp.status === '204'){
                 lodaPagina()
+               
              }
         })
         
